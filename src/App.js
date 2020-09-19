@@ -4,9 +4,10 @@ import './components/Autocomplete';
 import Autocomplete from './components/Autocomplete';
 
 function App() {
+  const words = ['love', 'rat', 'ratata', 'cat', 'loyal', 'aha','lolo'];
   return (
     <div className="App">
-      <Autocomplete name='lo' />
+      <Autocomplete input='lo' data={words}/>
     </div>
   );
 }
